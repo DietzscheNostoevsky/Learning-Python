@@ -1,18 +1,7 @@
-def guest_list(guests):
-    for user in guests:
-        name = user[0]
-        age = user[1]
-        occ = user[2]
+from re import match
 
-        
-        print("{} is {} years old and works as {}".format(name,age,occ))
-
-guest_list([('Ken', 30, "Chef"), ("Pat", 35, 'Lawyer'), ('Amanda', 25, "Engineer")])
-
-#Click Run to submit code
-"""
-Output should match:
-Ken is 30 years old and works as Chef
-Pat is 35 years old and works as Lawyer
-Amanda is 25 years old and works as Engineer
-"""
+mystr = "Welcome to TutorialsTeacher"
+obj1 = match("We", mystr)
+print(obj1)
+obj2 = match("teacher", mystr)
+print(obj2)
