@@ -4,7 +4,7 @@ z = 0
 
 
 for x in range(15):
-    y = 83*(0.995)**x
+    y = 83*(0.99)**x
     #z = int(y)
     z = round(y, 1)
 

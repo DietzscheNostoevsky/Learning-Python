@@ -19,9 +19,9 @@ class Clothing:
     def Stock_by_Material(self, material):
         count = 0
         n = 0
-        for item in Clothing.stock['___']:
+        for item in Clothing.stock['material']:
             if item == material:
-                count += Clothing.___['amount'][n]
+                count += Clothing.stock['amount'][n]
                 n += 1
         return count
 
