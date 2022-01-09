@@ -11,8 +11,8 @@ def weight_reduce_generator():
     y = 0
     z = 0
 
-    for x in range(15):
-        y = 83*(0.99)**x
+    for x in range(20):
+        y = 82.8*(0.99)**x
         z = round(y, 1)
 
         # print (x,":",y)
@@ -20,7 +20,7 @@ def weight_reduce_generator():
         print(x, ':', z)
 
 
-# weight_reduce_generator()
+weight_reduce_generator()
 # %%
 x = datetime.datetime.now()
 print(x)
