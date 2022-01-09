@@ -1,16 +1,30 @@
 
-x = 0
-y = 0
-z = 0
+import datetime
 
 
-for x in range(15):
-    y = 83*(0.99)**x
-    #z = int(y)
-    z = round(y, 1)
+# %%
+def weight_reduce_generator():
+    """generates weight corresponding to the percentage decrease
+    per week given initial week and total weeks """
+    # initialize variables
+    x = 0
+    y = 0
+    z = 0
 
-    #print (x,":",y)
-    #print(x,':', z, ':', y)
-    print(x, ':', z)
+    for x in range(15):
+        y = 83*(0.99)**x
+        z = round(y, 1)
 
-print("yeehaaaww")
+        # print (x,":",y)
+        # print(x,':', z, ':', y)
+        print(x, ':', z)
+
+
+# weight_reduce_generator()
+# %%
+x = datetime.datetime.now()
+print(x)
+
+# %%
+
+# %%

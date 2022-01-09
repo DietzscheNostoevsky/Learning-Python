@@ -11,18 +11,24 @@ class Animal:
     def set_category(self, category):
         self.category = category
 
+# %%
+
 
 class Turtle(Animal):
 
-    Turtle.category = "Reptile"
+    Animal.category = "Reptile"
 
 
 print(Turtle.category)
+
+# %%
 
 
 class Snake(Animal):
 
     Snake.category = "heehaa"
+
+# %%
 
 
 print(Snake.category)
