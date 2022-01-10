@@ -3,7 +3,7 @@
 
 # # Assessment - Object-oriented programming
 
-# In this exercise, we'll create a few classes to simulate a server that's taking connections from the outside and then a load balancer that ensures that there are enough servers to serve those connections. 
+# In this exercise, we'll create a few classes to simulate a server that's taking connections from the outside and then a load balancer that ensures that there are enough servers to serve those connections.
 # <br><br>
 # To represent the servers that are taking care of the connections, we'll use a Server class. Each connection is represented by an id, that could, for example, be the IP address of the computer connecting to the server.  For our simulation, each connection creates a random amount of load in the server, between 1 and 10.
 # <br><br>
@@ -15,6 +15,7 @@
 #Begin Portion 1#
 import random
 
+
 class Server:
     def __init__(self):
         """Creates a new server instance, with no active connections."""
@@ -23,10 +24,9 @@ class Server:
     def add_connection(self, connection_id):
         """Adds a new connection to this server."""
         connection_load = random.random()*10+1
-        
+
         # Add the connection to the dictionary with the calculated load
         self.connections[connection_id] = connection_load
-        
 
     def close_connection(self, connection_id):
         """Closes a connection on this server."""
@@ -44,7 +44,7 @@ class Server:
     def __str__(self):
         """Returns a string with the current load of the server"""
         return "{:.2f}%".format(self.load())
-    
+
 #End Portion 1#
 
 
@@ -60,8 +60,8 @@ print(server.load())
 
 
 # After running the above code cell, if you get a **<font color =red>NameError</font>** message, be sure to run the Server class definition code block first.
-# 
-# The output should be 0.  This is because some things are missing from the Server class. So, you'll need to go back and fill in the blanks to make it behave properly. 
+#
+# The output should be 0.  This is because some things are missing from the Server class. So, you'll need to go back and fill in the blanks to make it behave properly.
 # <br><br>
 # Go back to the Server class definition and fill in the missing parts for the `add_connection` and `load` methods to make the cell above print a number different than zero.  As the load is calculated randomly, this number should be different each time the code is executed.
 # <br><br>
@@ -97,42 +97,57 @@ class LoadBalancing:
     def add_connection(self, connection_id):
         """Randomly selects a server and adds a connection to it."""
         server = random.choice(self.servers)
-        
+
         # Add the connection to the dictionary with the selected server
         self.connections[connection_id] = server
+
         # Add the connection to the server
-        self.connections[connection_id].add_connection(connection_id)
-        
+        # self.connections[connection_id].add_connection(connection_id)
+        server.add_connection(connection_id)
+
         self.ensure_availability()
 
     def close_connection(self, connection_id):
         """Closes the connection on the the server corresponding to connection_id."""
-        
+
         # Find out the right server
         term = self.connections[connection_id]
-        
+
         # Close the connection on the server
         term.close_connection(connection_id)
-        
+
         # Remove the connection from the load balancer
         del self.connections[connection_id]
 
     def avg_load(self):
         """Calculates the average load of all servers"""
-        la = 0
-        a = len(self.servers)
+        #la = 0
+        #a = len(self.servers)
         # Sum the load of each server and divide by the amount of servers
-        for i in self.connections.values():
-            la = la + i.load()
-            
-            
-        return la/a
+        # for i in self.connections.values():
+        #   la = la + i.load()
+
+       # return la/a
+
+        a = len(self.servers)
+        total_load = 0
+        for serve in self.servers:
+            total_load = serve.load()
+        return total_load/a
+
+
+#    def avg_load(self):
+#       """Calculates the average load of all servers"""
+#        server_count = len(self.servers)
+#        total_load = sum(s.load() for s in self.servers)
+#        return total_load/server_count
+
 
     def ensure_availability(self):
         """If the average load is higher than 50, spin up a new server"""
-        if self.avg_load() > 50 :
+        if self.avg_load() > 50:
             self.servers.append(Server())
-        
+
         pass
 
     def __str__(self):
@@ -163,7 +178,7 @@ l.servers.append(Server())
 print(l.avg_load())
 
 
-# The average load should now be half of what it was before. If it's not, make sure you correctly fill in the missing gaps for the `add_connection` and `avg_load` methods so that this code works correctly. 
+# The average load should now be half of what it was before. If it's not, make sure you correctly fill in the missing gaps for the `add_connection` and `avg_load` methods so that this code works correctly.
 # <br><br>
 # **Hint:** You can iterate through the all servers in the *self.servers* list to get the total server load amount and then divide by the length of the *self.servers* list to compute the average load amount.
 
@@ -196,7 +211,6 @@ print(l)
 
 
 print(l.avg_load())
-
 
 
 # Awesome! If the average load is indeed less than 50%, you are all done with this assessment.
