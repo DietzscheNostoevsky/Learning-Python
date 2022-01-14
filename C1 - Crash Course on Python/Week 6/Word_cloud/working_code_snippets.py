@@ -1,7 +1,8 @@
 
 # %%
 import os
-f = open("/Users/saurabhkumarsingh/Documents/GitHub/Learning-Python/Course-1/Week 6/Word_cloud/testfile.txt")
+file = "/Users/saurabhkumarsingh/Documents/GitHub/Projects/News_analysis/news.txt"
+f = open(file)
 text = f.read()
 
 
@@ -98,12 +99,19 @@ def FrequencyWithUninterestingRemoved(listofwords):
 
 
 # %%
-text1 = RemovePunchuations(text)
+def Frequency_dict(text):
+    text1 = RemovePunchuations(text)
 
-listofwords = TokenfromText(text1)
+    listofwords = TokenfromText(text1)
 
-frequencyofwords = FrequencyWithUninterestingRemoved(listofwords)
+    frequencyofwords = FrequencyWithUninterestingRemoved(listofwords)
 
-print(frequencyofwords)
+    return frequencyofwords
+
+
+f_dict = Frequency_dict(text)
+
+print(f_dict)
+
 
 # %%
