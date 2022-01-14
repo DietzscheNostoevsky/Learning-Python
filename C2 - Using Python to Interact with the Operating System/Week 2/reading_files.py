@@ -18,4 +18,5 @@ file.close()
 with open("/Users/saurabhkumarsingh/Documents/GitHub/Dataset/testdata.txt") as file:
     print(file.readline())
 
-# %%
+
+# readlines - gives a list
