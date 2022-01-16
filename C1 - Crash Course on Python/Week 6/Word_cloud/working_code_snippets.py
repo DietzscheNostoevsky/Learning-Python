@@ -67,7 +67,7 @@ def FrequencyWithUninterestingRemoved(listofwords):
                            'after', 'again', 'against', 'all', 'am',
                            'an', 'and', 'any', 'are', "aren't", 'as',
                            'at', 'be', 'because', 'been', 'before',
-                           'didst', 'us', 'one',
+                           'didst', 'us', 'one', '"', "'", '"i', '”', "’", '“i',
                            'being', 'below', 'between', 'both',
                            'but', 'by', "can't", 'cannot', 'could',
                            "couldn't", 'did', "didn't", 'do', 'does',

@@ -8,23 +8,27 @@
 # the contents_of_file function to turn
 # the data in the CSV file into a dictionary using DictReader.
 
-
+# %%
 import os
 import csv
 
 # Create a file with data in it
+filename = "/Users/saurabhkumarsingh/Documents/GitHub/Dataset/testdata.txt"
 
 
-def create_file(filename):
-    with open(filename, "w") as file:
-        file.write("name,color,type\n")
-        file.write("carnation,pink,annual\n")
-        file.write("daffodil,yellow,perennial\n")
-        file.write("iris,blue,perennial\n")
-        file.write("poinsettia,red,perennial\n")
-        file.write("sunflower,yellow,annual\n")
+# %%
+
+with open(filename, "w") as file:
+    file.write("name,color,type\n")
+    file.write("carnation,pink,annual\n")
+    file.write("daffodil,yellow,perennial\n")
+    file.write("iris,blue,perennial\n")
+    file.write("poinsettia,red,perennial\n")
+    file.write("sunflower,yellow,annual\n")
 
 # Read the file contents and format the information about each row
+
+# %%
 
 
 def contents_of_file(filename):

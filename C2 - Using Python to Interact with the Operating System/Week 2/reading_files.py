@@ -2,7 +2,7 @@
 file = open("/Users/saurabhkumarsingh/Documents/GitHub/Dataset/testdata.txt")
 
 # %%
-print(file.readline())
+print(file.readlines())
 # %%
 for a in range(10):
     print(file.readline())
