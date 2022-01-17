@@ -29,15 +29,23 @@ def contents_of_file(filename):
     create_file(filename)
 
     # Open the file
-    ___
+    file1 = open(filename, 'r')
+
     # Read the rows of the file
-    rows = ___
+    rows = csv.reader(file1)
+    count = 0
+
     # Process each row
     for row in rows:
-        ___ = row
+        name, color, type = row
         # Format the return string for data rows only
 
-        return_string += "a {} {} is {}\n".format(___)
+        if count == 0:
+            count += 1
+        else:
+
+            return_string += "a {} {} is {}\n".format(color, name, type)
+
     return return_string
 
 

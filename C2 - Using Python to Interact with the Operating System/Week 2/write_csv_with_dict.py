@@ -1,6 +1,7 @@
 # %%
 import os
 import csv
+import pandas
 
 # %%
 with open("software.csv") as software:
@@ -23,4 +24,8 @@ with open("by_dept.csv", "w") as dept:
     writer1 = csv.DictWriter(dept, fieldnames=keys)
     writer1.writeheader()
     writer1.writerows(users)
+# %%
+df = pandas.read_csv('by_dept.csv')
+print(df)
+
 # %%
