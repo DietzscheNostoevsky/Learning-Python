@@ -48,7 +48,7 @@ def FrequencyWithUninterestingRemoved(listofwords):
 
     for word in supplied_list:
         if word not in frequency:
-            frequency[word] = 1
+            frequency[word] = 0
         frequency[word] += 1
 
     uninteresting_words = ["the", "a", "to", "if", "is", "it", "of",
