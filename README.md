@@ -31,3 +31,5 @@ Approx : 18 hours
 Course 6 : Automating Real-World tasks with Python
 URL : https://www.coursera.org/learn/automating-real-world-tasks-python?specialization=google-it-automation
 Approx : 13 hours
+
+Total : 132 hours 
