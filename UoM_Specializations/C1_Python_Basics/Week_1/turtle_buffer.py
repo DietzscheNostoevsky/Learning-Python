@@ -1,15 +1,13 @@
+# Python program to draw
+# Rainbow Benzene
+# using Turtle Programming
 import turtle
-
-# Creating a general purpose code whcih asks user to enter
-# number of side in the regular polygon and creates a polygon of that side
-
-wn = turtle.Screen()
-kachua = turtle.Turtle()
-
-#side = int(input("Enter the number of sides in the polygon :"))
-
-# angle = 360/side  # calculates the angle turtle have to turn
-
-kachua.forward(100)
-
-wn.exitonclick()
+colors = ['red', 'purple', 'blue', 'green', 'orange', 'yellow']
+t = turtle.Pen()
+turtle.bgcolor('black')
+t.speed(100)
+for x in range(360):
+    t.pencolor(colors[x % 6])
+    t.width(x//100 + 1)
+    t.forward(x)
+    t.left(59)
