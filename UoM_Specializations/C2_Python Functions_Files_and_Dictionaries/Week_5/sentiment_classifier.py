@@ -1,4 +1,3 @@
-from pyparsing import line
 
 
 punctuation_chars = ["'", '"', ",", ".", "!", ":", ";", '#', '@']
@@ -56,7 +55,7 @@ firstline = 0
 for lines in twitter:
     if firstline == 0:
         outfile.write(
-            "Number of Retweets,Number of Replies,Positive Score,Negative Score,Net Score\n")
+            "Number of Retweets, Number of Replies, Positive Score, Negative Score, Net Score\n")
         firstline = 1
         continue
 
