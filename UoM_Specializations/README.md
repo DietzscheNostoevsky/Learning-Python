@@ -23,7 +23,9 @@ S2 : https://www.coursera.org/specializations/python-3-programming#instructors
 
     All courses from this one, including basics, as it looks like more comprehensive one 
 
-    C1 : Python Basics : https://www.coursera.org/learn/python-basics?specialization=python-3-programming
+    C1 : Python Basics : https://www.coursera.org/learn/python-basics?specialization=python-3-programming 
+
+    Done
 
     C2 : Python Functions, Files, and Dictionaries : https://www.coursera.org/learn/python-functions-files-dictionaries?specialization=python-3-programming
 
