@@ -69,8 +69,7 @@ def get_related_titles(inlist):
 
 
 def get_movie_data(movie):
-
-    moviename = str(movie)
+    moviename = 'venom'
     apikey = "c451a42"
     base_url = "http://www.omdbapi.com/"
     paramdict = {}
@@ -83,6 +82,26 @@ def get_movie_data(movie):
     y = omdbresp.json()
 
     return y
+
+
+# -----------------------------------------------------------------------
+# Now write a function called get_movie_rating.
+# It takes an OMDB dictionary result for one movie
+# and extracts the Rotten Tomatoes rating as an integer.
+# For example, if given the OMDB dictionary for “Black Panther”,
+# it would return 97. If there is no Rotten Tomatoes rating, return 0.
+
+
+def get_movie_rating(indict):
+
+    if indict['Ratings'][1]['Source'] == 'Rotten Tomatoes':
+        rating = int(indict['Ratings'][1]['Value'].replace('%', ''))
+    else:
+        rating = 0
+
+    return rating
+
+# -----------------------------------------------------------------------
 
 
 # %%
