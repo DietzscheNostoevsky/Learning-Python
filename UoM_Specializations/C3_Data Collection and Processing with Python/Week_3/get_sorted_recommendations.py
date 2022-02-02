@@ -17,12 +17,9 @@ from Project_OMDB_and_TasteDive import *
 # -----------------------------------------------------------------------
 #get_sorted_recommendations(["Bridesmaids", "Sherlock Holmes"])
 
-# %%
-
 
 def get_sorted_recommendations(movielist):
 
-    # %%
     relatedmovies = get_related_titles(movielist)
     retlist: []
     moviedict = {}
@@ -35,3 +32,10 @@ def get_sorted_recommendations(movielist):
     retlist = list(sortedmoviedict.keys())
 
     return retlist
+
+
+# %%
+get_sorted_recommendations(['Avengers', 'Iron Man', 'Thor'])
+
+
+# %%
