@@ -69,7 +69,7 @@ def get_related_titles(inlist):
 
 
 def get_movie_data(movie):
-    moviename = 'venom'
+    moviename = str(movie)
     apikey = "c451a42"
     base_url = "http://www.omdbapi.com/"
     paramdict = {}
@@ -101,7 +101,16 @@ def get_movie_rating(indict):
 
     return rating
 
-# -----------------------------------------------------------------------
 
+# -----------------------------------------------------------------------
+# Define a function get_sorted_recommendations.
+# It takes a list of movie titles as an input.
+# It returns a sorted list of related movie titles as output,
+# up to five related movies for each input movie title.
+# The movies should be sorted in descending order by their
+# Rotten Tomatoes rating, as returned by the get_movie_rating function.
+# Break ties in reverse alphabetic order,
+# so that ‘Yahşi Batı’ comes before ‘Eyyvah Eyvah’.
 
 # %%
+def get_sorted_recommendations(movielist):
