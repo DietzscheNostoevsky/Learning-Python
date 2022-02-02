@@ -62,3 +62,27 @@ def get_related_titles(inlist):
                 retlist.append(m)
     return retlist
 # -----------------------------------------------------------------------
+# Define a function called get_movie_data.
+# It takes in one parameter which is a string
+# that should represent the title of a movie you want to search.
+# The function should return a dictionary with information about that movie.
+
+
+def get_movie_data(movie):
+
+    moviename = str(movie)
+    apikey = "c451a42"
+    base_url = "http://www.omdbapi.com/"
+    paramdict = {}
+
+    paramdict['t'] = moviename
+    paramdict['r'] = 'json'
+    paramdict['apikey'] = apikey
+
+    omdbresp = requests.get(base_url, paramdict)
+    y = omdbresp.json()
+
+    return y
+
+
+# %%
