@@ -28,5 +28,18 @@ class Point:
         retstr = f"x = {self.x} , y = {self.y}"
         return retstr
 
+    # Suppose you have a point object and wish to find
+    # the midpoint halfway between it and some other target point.
+    # We would like to write a method, let’s call it halfway,
+    # which takes another Point as a parameter and
+    # returns the Point that is halfway between the
+    # point and the target point it accepts as input.
+
+    def halfway(self, targetpoint):
+        xd = (self.x + targetpoint.x)/2
+        yd = (self.y + targetpoint.y)/2
+        retpt = Point(xd, yd)
+        return retpt
+
 
 # %%
