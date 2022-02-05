@@ -33,7 +33,11 @@ S2 : https://www.coursera.org/specializations/python-3-programming#instructors
 
     C3 : Data Collection and Processing with Python : https://www.coursera.org/learn/data-collection-processing-python?specialization=python-3-programming
 
+    Done 
+
     C4 : Python Classes and Inheritance : https://www.coursera.org/learn/python-classes-inheritance?specialization=python-3-programming
+
+    Done 
 
     C5 : Python Project: pillow, tesseract, and opencv : https://www.coursera.org/learn/python-project?specialization=python-3-programming
 
