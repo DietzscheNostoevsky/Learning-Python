@@ -7,6 +7,7 @@
     160 hours ?? 
 
 
+*Its bad for Automation to fail silently*
 
 Course 1 : Crash Course on Python, Coursera 
 Course URL : https://www.coursera.org/learn/python-crash-course/home/welcome
