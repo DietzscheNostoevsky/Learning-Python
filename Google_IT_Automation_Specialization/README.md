@@ -31,6 +31,8 @@ Course 4 : Troubleshooting and Debugging Techniques
 URL : https://www.coursera.org/learn/troubleshooting-debugging-techniques?specialization=google-it-automation
 Approx : 19 hours 
 
+    Completed Week 1
+    Financial Aid Application not working 
 
 Course 5 : Configuration Management and Cloud
 URL : https://www.coursera.org/learn/configuration-management-cloud?specialization=google-it-automation
