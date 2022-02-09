@@ -37,12 +37,12 @@
     Completed Week 1
     Financial Aid Application not working 
 
-    Week 3/4 done 
+     Done 
 
 ### Course 5 : Configuration Management and Cloud
     URL : https://www.coursera.org/learn/configuration-management-cloud?specialization=google-it-automation
     Approx : 18 hours
-
+    Material Done 
     Financial Aid Applied 
 
 ### Course 6 : Automating Real-World tasks with Python
