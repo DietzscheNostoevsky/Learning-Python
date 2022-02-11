@@ -22,7 +22,8 @@
     URL : https://www.coursera.org/learn/python-operating-system?specialization=google-it-automation
     Approx : 31 hours
 
-    Done till Week 5
+    Week 1 Assignments Done
+
 
 ### Course 3 : Introduction to Git and Github
     URL : https://www.coursera.org/learn/introduction-git-github?specialization=google-it-automation
