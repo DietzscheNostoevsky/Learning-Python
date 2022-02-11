@@ -29,6 +29,10 @@ All courses from this one, including basics, as it looks like more comprehensive
 
         Done
 
+        Got Certificate 
+        
+        Link : https://coursera.org/share/1416c0b98ef5d7e847b1b95e9bd3181a
+
     C2 : Python Functions, Files, and Dictionaries : https://www.coursera.org/learn/python-functions-files-dictionaries?specialization=python-3-programming
 
         Done
