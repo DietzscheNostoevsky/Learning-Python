@@ -94,6 +94,7 @@ def get_movie_data(movie):
 def get_movie_rating(indict):
 
     try:
+        rating = 0
         if indict['Ratings'][1]['Source'] == 'Rotten Tomatoes':
             rating = int(indict['Ratings'][1]['Value'].replace('%', ''))
     except:
