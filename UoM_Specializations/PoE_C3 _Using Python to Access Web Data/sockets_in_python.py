@@ -23,13 +23,13 @@ mysocket.connect(('data.pr4e.org', 80))  # diled the phone
 # %%
 
 # generated the command over HTTP using UTF-8 encoding
-cmd = 'GET http://data.pr4e.org/romeo.txt HTTP/1.0\r\n\r\n'.encode()
+cmd = 'GET http://data.pr4e.org/intro-short.txt HTTP/1.0\r\n\r\n'.encode()
 mysocket.send(cmd)  # sent the command
 
 # %%
 
 while True:
-    data = mysocket.recv(512)  # receving the data 512 characters
+    data = mysocket.recv(1)  # receving the data 512 characters
     if len(data) < 1:
         break
     print(data.decode(), end='')  # printed what we received
