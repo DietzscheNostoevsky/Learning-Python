@@ -23,21 +23,20 @@ ctx.check_hostname = False
 ctx.verify_mode = ssl.CERT_NONE
 # -----------------------------------------
 
-url = input('Enter URL - ')
-#url = "http://py4e-data.dr-chuck.net/comments_42.json"
+loc = input('Enter Location - ')
+
+baseurl = 'http://py4e-data.dr-chuck.net/json?'
+params = {}
+params['address'] = loc
+params['key'] = 42
+url = baseurl + urllib.parse.urlencode(params)
+
+
 print(f"Retreiving : {url}")
 
 uh = urllib.request.urlopen(url, context=ctx).read()
 
 data = json.loads(uh)
-comments = data['comments']
-sum = 0
-count = 0
 
-for i in comments:
-    num = int(i['count'])
-    sum += num
-    count += 1
-
-print(f"Count = {count}")
-print(f"Sum = {sum}")
+place_id = data['results'][0]['place_id']
+print(place_id)
