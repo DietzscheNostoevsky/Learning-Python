@@ -18,6 +18,8 @@ for line in fh:
     email = pieces[1]
     do = email.split('@')
     domain = do[1]
+
+    # saving the domain names and its frequency kinda like how we save in a python dictionary
     cur.execute('SELECT count FROM Counts WHERE org = ? ', (domain,))
     row = cur.fetchone()
     if row is None:
