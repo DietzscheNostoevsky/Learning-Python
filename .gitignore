@@ -1,5 +1,5 @@
 
-.DS_Store
+*.DS_Store
 .DS_Store
 .DS_Store
 .DS_Store
@@ -8,3 +8,4 @@
 *.sqlite
 *.sqlite-journal
 UoM_Specializations/P3_C5_Python Projectpillow tesseract and opencv/final_project/readonly/images.zip
+.DS_Store
