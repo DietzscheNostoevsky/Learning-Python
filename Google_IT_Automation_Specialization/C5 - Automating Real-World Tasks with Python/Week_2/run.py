@@ -7,7 +7,7 @@ import requests
 dir = 'data/feedback'
 
 files = os.listdir(dir)
-posturl = 'http://<corpweb-external-IP>/feedback'
+posturl = 'http://34.133.164.72/feedback/'
 # Replace <corpweb-external-IP> with corpweb's external IP address.
 
 # %%
