@@ -7,7 +7,7 @@ filedir = 'supplier-data/descriptions'
 
 # turn the data from txt to json dictionary
 
-upload_url = 'http://[linux-instance-external-IP]/fruits'
+upload_url = 'http://35.202.51.74/fruits/'
 
 fruit_keys = [
     'name',
@@ -37,5 +37,6 @@ for file in dirs:
         upload_dict['weight'] = int(data[1][:3])
         upload_dict['description'] = data[2].strip()
         upload_dict['image_name'] = file.split('/')[-1].split('.')[0] + '.jpeg'
-        print(upload_dict)
-        # upload(upload_dict)
+        # print(upload_dict)
+        upload(upload_dict)
+        print('uploaded')
