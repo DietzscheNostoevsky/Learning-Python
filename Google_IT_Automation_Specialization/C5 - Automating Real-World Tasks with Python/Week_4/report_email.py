@@ -13,7 +13,7 @@ filedir = 'supplier-data/descriptions'
 dirs = [os.path.join(filedir, file)
         for file in os.listdir(filedir) if file.endswith('.txt')]
 
-dirs = sorted(dirs)
+#dirs = sorted(dirs)
 fruits = []
 
 for file in dirs:
@@ -24,7 +24,7 @@ for file in dirs:
 summary = ''
 br = '<br />'
 for fruitname, fruitweight in fruits:
-    summary += fruitname + br + fruitweight + br + br
+    summary += 'name: ' + fruitname + br + 'weight: ' + fruitweight + br + br
 
 
 # %%

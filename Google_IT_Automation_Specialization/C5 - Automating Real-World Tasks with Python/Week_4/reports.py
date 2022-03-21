@@ -15,7 +15,7 @@ from reportlab.platypus import SimpleDocTemplate
 
 def generate_report(filename, title, paragraph):
     styles = getSampleStyleSheet()
-    report = SimpleDocTemplate()
+    report = SimpleDocTemplate(filename)
     report_title = Paragraph(title, styles["h1"])
     report_info = Paragraph(paragraph, styles["BodyText"])
     empty_line = Spacer(1, 20)
