@@ -13,4 +13,13 @@ end = end_date.strftime("%d-%m-%Y")
 today = datetime.date.today()
 # %%
 
-data_today = input("Enter data remaining : ")
+#data_today = input("Enter data remaining (GB) :  ")
+data_today = 38
+days_remain = end_date - today
+data_to_remain = 2
+util_data = data_today - data_to_remain
+
+# %%
+per_day_usage = util_data / days_remain.days
+print(per_day_usage, "GB")
+# %%
