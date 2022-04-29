@@ -24,12 +24,14 @@ util_data = data_today - data_to_remain
 # %%
 per_day_usage = util_data / days_remain.days
 per_day_usage = round(per_day_usage, 2)
-print()
+print("-------------------------------------------", "\n")
 print("Today = ", data_today, "GB")
-print("Per day usage = ", per_day_usage, "GB")
+print("Per day usage = ", per_day_usage, "GB", "\n")
+print("-------------------------------------------", "\n")
 
 # %%
 
+print("Closing Data Per Day ", "\n")
 for i in range(days_remain.days):
     print(today, ':', util_data, "GB")
     util_data = util_data - per_day_usage
