@@ -5,6 +5,7 @@
 
 # %%
 import datetime
+from datetime import timedelta
 
 end_date = datetime.date(2022, 5, 20)
 
@@ -13,13 +14,26 @@ end = end_date.strftime("%d-%m-%Y")
 today = datetime.date.today()
 # %%
 
-#data_today = input("Enter data remaining (GB) :  ")
-data_today = 38
+data_today = input("Enter data remaining (GB) :  ")
+data_today = int(data_today)
+#data_today = 38
 days_remain = end_date - today
 data_to_remain = 2
 util_data = data_today - data_to_remain
 
 # %%
 per_day_usage = util_data / days_remain.days
-print(per_day_usage, "GB")
+per_day_usage = round(per_day_usage, 2)
+print()
+print("Today = ", data_today, "GB")
+print("Per day usage = ", per_day_usage, "GB")
+
+# %%
+
+for i in range(days_remain.days):
+    print(today, ':', util_data, "GB")
+    util_data = util_data - per_day_usage
+    util_data = round(util_data, 2)
+    today = today + timedelta(1)
+
 # %%
