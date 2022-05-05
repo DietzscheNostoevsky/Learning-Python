@@ -38,4 +38,6 @@ for i in range(days_remain.days):
     util_data = round(util_data, 2)
     today = today + timedelta(1)
 
+print("********************************************", "\n")
+
 # %%
