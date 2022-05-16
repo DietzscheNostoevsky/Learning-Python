@@ -23,5 +23,8 @@ class Solution:
         }
 
         # Problem is simpler to solve by working the string from back to front and using a map.
+        # Test = "MCMXCIV"
 
         s = s.upper()
+        s = s[::-1]
+        for i in s:
