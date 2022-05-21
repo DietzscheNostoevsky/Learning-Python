@@ -7,7 +7,7 @@
 import datetime
 from datetime import timedelta
 
-end_date = datetime.date(2022, 5, 20)
+end_date = datetime.date(2022, 6, 22)
 
 end = end_date.strftime("%d-%m-%Y")
 
@@ -18,7 +18,7 @@ data_today = input("Enter data remaining (GB) :  ")
 data_today = float(data_today)
 #data_today = 38
 days_remain = end_date - today
-data_to_remain = 2
+data_to_remain = 0
 util_data = data_today - data_to_remain
 
 # %%
