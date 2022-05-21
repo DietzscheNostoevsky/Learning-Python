@@ -7,7 +7,7 @@
 import datetime
 from datetime import timedelta
 
-end_date = datetime.date(2022, 6, 22)
+end_date = datetime.date(2022, 6, 5)
 
 end = end_date.strftime("%d-%m-%Y")
 
@@ -32,11 +32,13 @@ print("-------------------------------------------", "\n")
 # %%
 
 print("Closing Data Per Day ", "\n")
+s_no = 0
 for i in range(days_remain.days):
-    print(today, ':', util_data, "GB")
+    print(s_no, " ", today, ':', util_data, "GB")
     util_data = util_data - per_day_usage
     util_data = round(util_data, 2)
     today = today + timedelta(1)
+    s_no += 1
 
 print("\n")
 print("********************************************", "\n")
