@@ -13,6 +13,12 @@ today = datetime.date.today()
 
 # %%
 present_weight = int(input("Insert present weight in KG : "))
-goal_weight = int(input("Insert Goal Weight : "))
+target_delta = int(input("Insert target loss per week : ") or "1")
+goal_weight = int(input("Insert Goal Weight : ") or "77")
+
+# %%
+# print supposed weight in coming days
+for i in range(present_weight-goal_weight):
+    print(i)
 
 # %%
