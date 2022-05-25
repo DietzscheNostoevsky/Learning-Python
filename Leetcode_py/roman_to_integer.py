@@ -28,3 +28,4 @@ class Solution:
         s = s.upper()
         s = s[::-1]
         for i in s:
+            
