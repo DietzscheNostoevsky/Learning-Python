@@ -20,11 +20,11 @@ def weight_reduce_generator():
         print(x, ':', z)
 
 
+print("Welcome to Weight Reduce Generator")
+print("It shows how much weight you will lose in coming days")
+print("If you lose 1 % of your weight daily")
+
+present_weight = int(input("Input present weight, default 84 : ") or "84")
+
+
 weight_reduce_generator()
-# %%
-#x = datetime.datetime.now()
-# print(x)
-
-# %%
-
-# %%
