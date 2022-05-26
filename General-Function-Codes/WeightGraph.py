@@ -10,16 +10,20 @@ def weight_reduce_generator():
     x = 0
     y = 0
     z = 0
+    t = today
 
     print("Today's date is : ", today)
 
     for x in range(0, 130, 7):
+
         y = 84*(0.999)**x
         z = round(y, 1)
 
         # print (x,":",y)
         # print(x,':', z, ':', y)
-        print(x, ':', z)
+        print(t, ':', z)
+        #print(x, ':', z)
+        t = today + datetime.timedelta(x)
 
 
 print("Welcome to Weight Reduce Generator")
