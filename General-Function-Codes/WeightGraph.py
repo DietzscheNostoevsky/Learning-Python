@@ -33,6 +33,8 @@ print("If you lose 1 % of your weight daily")
 #present_weight = int(input("Input present weight, default 84 : ") or "84")
 today = datetime.date.today()
 
+print(today)
+
 
 weight_reduce_generator()
 
