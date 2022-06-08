@@ -21,6 +21,7 @@ goal_weight = int(input("Insert Goal Weight : ") or "77")
 # complete this first
 # to print relative curve
 # day 2
+# Day 3
 for i in range(present_weight-goal_weight):
     print(i)
 
