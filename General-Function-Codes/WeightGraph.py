@@ -11,6 +11,7 @@ def weight_reduce_generator():
     y = 0
     z = 0
     t = today
+    # add variables to account for calories
 
     print("Today's date is : ", today)
 
