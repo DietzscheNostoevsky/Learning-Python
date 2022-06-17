@@ -22,9 +22,10 @@ def weight_reduce_generator():
 
         # print (x,":",y)
         # print(x,':', z, ':', y)
-        print(t, ':', z)
+
         #print(x, ':', z)
         t = today + datetime.timedelta(x)
+        print(t, ':', z)
 
 
 print("Welcome to Weight Reduce Generator")
