@@ -32,7 +32,7 @@ print("Welcome to Weight Reduce Generator")
 print("It shows how much weight you will lose in coming days")
 print("If you lose 1 % of your weight per week")
 
-present_weight = int(input("Input present weight, default 84 : ") or "84")
+present_weight = int(input("Input present weight, default 85 : ") or "84")
 today = datetime.date.today()
 
 print(today)
