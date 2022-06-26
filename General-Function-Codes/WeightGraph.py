@@ -42,3 +42,4 @@ print(today)
 weight_reduce_generator()
 
 # %%
+# add functionality for 1 percent and 0.5 percent per week loss
