@@ -43,3 +43,4 @@ weight_reduce_generator()
 
 # %%
 # add functionality for 1 percent and 0.5 percent per week loss
+# How to come to 0.999 vs 0.995 vs 0.99 ?
