@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 def count_letters(text):
     result = {}
 
