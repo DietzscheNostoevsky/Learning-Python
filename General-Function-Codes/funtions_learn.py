@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # REPLACE THIS STARTER CODE WITH YOUR FUNCTION
 """june_days = 30
 print("June has " + str(june_days) + " days.")
