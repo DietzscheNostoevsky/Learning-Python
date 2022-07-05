@@ -17,7 +17,7 @@ def weight_reduce_generator():
 
     for x in range(0, 130, 7):
 
-        y = present_weight*(0.999)**x
+        y = present_weight*((0.999)**x)
         z = round(y, 1)
 
         # print (x,":",y)
