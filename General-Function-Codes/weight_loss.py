@@ -15,14 +15,3 @@ today = datetime.date.today()
 present_weight = int(input("Insert present weight in KG : "))
 target_delta = int(input("Insert target loss per week : ") or "1")
 goal_weight = int(input("Insert Goal Weight : ") or "77")
-
-# %%
-# print supposed weight in coming days
-# complete this first
-# to print relative curve
-# day 2
-# Day 3
-for i in range(present_weight-goal_weight):
-    print(i)
-
-# %%
