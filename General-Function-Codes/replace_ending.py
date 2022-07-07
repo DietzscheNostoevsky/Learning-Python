@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 def skip_elements(elements):
     # Initialize variables
     new_list = []
