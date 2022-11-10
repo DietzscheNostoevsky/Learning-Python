@@ -62,5 +62,7 @@ print('Proportion of wins without switching: {:.4f}'
       .format(nwins_without_switch/ntrials))
 print('Proportion of wins with switching: {:.4f}'
       .format(nwins_with_switch/ntrials))
+greater = nwins_with_switch > nwins_without_switch
+print(greater)
 print("Simtime: {} sec".format(simtime))
 print("------------------------------")
