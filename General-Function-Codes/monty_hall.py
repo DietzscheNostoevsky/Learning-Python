@@ -44,7 +44,8 @@ ndoors, ntrials = 3, 100
 nwins_without_switch = run_trials(ntrials, False, ndoors)
 nwins_with_switch = run_trials(ntrials, True, ndoors)
 
-print('Monty Hall Problem with {} doors'.format(ndoors))
+doors = "\033[1m" + str(ndoors) + "\033[0m"
+print('Monty Hall Problem with {} doors'.format(doors))
 
 print("------------------------------")
 print('Proportion of wins without switching: {:.4f}'
