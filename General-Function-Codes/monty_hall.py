@@ -40,11 +40,17 @@ def run_trials(ntrials, switch_doors, ndoors=3):
     return nwins
 
 
-ndoors, ntrials = 3, 100
+# ndoors, ntrials = 3, 100
+ndoors = int(input("Enter the number of Doors(default 3): ") or '3')
+ntrials = int(
+    input("Enter the number of trials to run(default 10000): ") or '10000')
+
 nwins_without_switch = run_trials(ntrials, False, ndoors)
 nwins_with_switch = run_trials(ntrials, True, ndoors)
 
 doors = "\033[1m" + str(ndoors) + "\033[0m"
+print("------------------------------")
+
 print('Monty Hall Problem with {} doors'.format(doors))
 
 print("------------------------------")
