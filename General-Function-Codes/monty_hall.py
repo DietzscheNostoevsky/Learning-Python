@@ -1,4 +1,5 @@
 import random
+import time
 
 
 def run_trial(switch_doors, ndoors=3):
@@ -45,17 +46,21 @@ ndoors = int(input("Enter the number of Doors(default 3): ") or '3')
 ntrials = int(
     input("Enter the number of trials to run(default 10000): ") or '10000')
 
+start = time.time()
+
+print("------------------------------")
+doors = "\033[1m" + str(ndoors) + "\033[0m"
+print('Monty Hall Problem with {} doors'.format(doors))
+
 nwins_without_switch = run_trials(ntrials, False, ndoors)
 nwins_with_switch = run_trials(ntrials, True, ndoors)
 
-doors = "\033[1m" + str(ndoors) + "\033[0m"
-print("------------------------------")
-
-print('Monty Hall Problem with {} doors'.format(doors))
-
+end = time.time()
+simtime = end - start
 print("------------------------------")
 print('Proportion of wins without switching: {:.4f}'
       .format(nwins_without_switch/ntrials))
 print('Proportion of wins with switching: {:.4f}'
       .format(nwins_with_switch/ntrials))
+print("Simtime: {} sec".format(simtime))
 print("------------------------------")
