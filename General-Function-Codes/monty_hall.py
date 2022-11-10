@@ -40,12 +40,15 @@ def run_trials(ntrials, switch_doors, ndoors=3):
     return nwins
 
 
-ndoors, ntrials = 3, 10000
+ndoors, ntrials = 3, 100
 nwins_without_switch = run_trials(ntrials, False, ndoors)
 nwins_with_switch = run_trials(ntrials, True, ndoors)
 
 print('Monty Hall Problem with {} doors'.format(ndoors))
+
+print("------------------------------")
 print('Proportion of wins without switching: {:.4f}'
       .format(nwins_without_switch/ntrials))
 print('Proportion of wins with switching: {:.4f}'
       .format(nwins_with_switch/ntrials))
+print("------------------------------")
