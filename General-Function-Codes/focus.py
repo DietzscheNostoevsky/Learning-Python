@@ -19,6 +19,7 @@
 #import libraries
 import os
 import random
+import time
 
 
 os.system("say break")
