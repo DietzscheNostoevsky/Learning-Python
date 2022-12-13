@@ -14,10 +14,11 @@
 # Max 15 mins between breaks
 
 # ------------------------------------------------------------
-
-import os
-import random
 #!/usr/bin/env python3
 
+#import libraries
+import os
+import random
 
-os.system("say beep")
+
+os.system("say break")
