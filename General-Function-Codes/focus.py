@@ -16,10 +16,18 @@
 # ------------------------------------------------------------
 #!/usr/bin/env python3
 
-#import libraries
+# importing libraries
 import os
 import random
 import time
 
 
-os.system("say break")
+def microrests():
+    """outputs a sound to take a break for 10 seconds and then resume work
+    """
+    os.system("say break")
+    time.sleep(10)
+    os.system("say resume")
+
+
+microrests()
