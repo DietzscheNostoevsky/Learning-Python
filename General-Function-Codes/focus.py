@@ -24,14 +24,14 @@ import random
 import time
 from datetime import date
 
-# %%
-
 
 def microrests():
     """outputs a sound to take a break for 10 seconds and then resume work
     """
+    print("take a 10 sec break")
     os.system("say break")
     time.sleep(10)
+    print("Resume")
     os.system("say resume")
 
 
@@ -60,13 +60,17 @@ def worksets():
     import random
     ran = random.randrange(7, 15)
     for i in range(15):
-        print(datetime.now().strftime("%H:%M:%S"))
+        print(i+1, ":", datetime.now().strftime("%H:%M:%S"))
         if i == ran:
             microrests()
         time.sleep(60)
-
-
-worksets()
-
-
+    print("------- 15 Min set COMPLETE -------")
 # %%
+
+
+for i in range(1, 7):
+    print("Set : ", i)
+    os.system("say set start")
+    worksets()
+
+os.system("say Focus Time Over")
