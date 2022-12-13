@@ -12,3 +12,7 @@
 # A timer will ring from the time between 5-20 mins random.
 # Min 5 mins
 # Max 15 mins between breaks
+
+# ------------------------------------------------------------
+
+!/usr/bin/env python3
