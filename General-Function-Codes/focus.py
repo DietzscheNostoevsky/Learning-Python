@@ -5,3 +5,10 @@
 # 90 minute implementd using Pomodoro Timer
 #
 # Implementing random microrests using Python
+
+# Todo
+
+# Microrests are 10 secs breaks to be implemented randomly after starting this programme
+# A timer will ring from the time between 5-20 mins random.
+# Min 5 mins
+# Max 15 mins between breaks
