@@ -10,7 +10,7 @@
 
 # Microrests are 10 secs breaks to be implemented randomly after starting this programme
 # reference https://www.youtube.com/watch?v=EhXLPdhtAHc
-# A timer will ring from the time between 5-20 mins random.
+# A timer will ring from the time between 5-15 mins random.
 # Min 5 mins
 # Max 15 mins between breaks
 
