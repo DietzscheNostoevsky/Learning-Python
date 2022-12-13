@@ -43,3 +43,12 @@ print("Start Time :", current_time)
 
 
 # %%
+
+def worksets():
+    """Work in 15 minute sets. 
+    A microrest in called at random time bewteen the time duration
+    But only after 7 minutes in a set 
+
+    """
+    
+    
