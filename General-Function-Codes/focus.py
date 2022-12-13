@@ -24,6 +24,8 @@ import random
 import time
 from datetime import date
 
+# %%
+
 
 def microrests():
     """outputs a sound to take a break for 10 seconds and then resume work
@@ -50,5 +52,21 @@ def worksets():
     But only after 7 minutes in a set 
 
     """
-    
-    
+    from datetime import datetime
+    NOW = datetime.now()
+    current_time = NOW.strftime("%H:%M:%S")
+    print("Set start")
+    print("Start Time :", current_time)
+    import random
+    ran = random.randrange(7, 15)
+    for i in range(15):
+        print(datetime.now().strftime("%H:%M:%S"))
+        if i == ran:
+            microrests()
+        time.sleep(60)
+
+
+worksets()
+
+
+# %%
