@@ -15,4 +15,9 @@
 
 # ------------------------------------------------------------
 
-!/usr/bin/env python3
+import os
+import random
+#!/usr/bin/env python3
+
+
+os.system("say beep")
