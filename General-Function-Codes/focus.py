@@ -18,9 +18,11 @@
 #!/usr/bin/env python3
 
 # importing libraries
+from datetime import datetime
 import os
 import random
 import time
+from datetime import date
 
 
 def microrests():
@@ -31,4 +33,13 @@ def microrests():
     os.system("say resume")
 
 
-microrests()
+# %%
+TODAY = date.today()
+d1 = TODAY.strftime("%d/%m/%Y")  # start date with dd-mm-yy format
+NOW = datetime.now()
+current_time = NOW.strftime("%H:%M:%S")
+print("Today : ", d1)
+print("Start Time :", current_time)
+
+
+# %%
