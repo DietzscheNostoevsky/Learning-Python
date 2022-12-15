@@ -30,7 +30,7 @@ def microrests():
     """
     print("take a 10 sec break")
     os.system("say break")
-    time.sleep(10)
+    time.sleep(15)
     print("Resume")
     os.system("say resume")
 
