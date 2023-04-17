@@ -1,8 +1,9 @@
+
+
+# Block 1 ----------------------------
 import pytz
 import time
 import datetime
-
-# Block 1 ----------------------------
 t0 = time.time()
 now_utc = datetime.datetime.utcnow()
 ist_tz = pytz.timezone('Asia/Kolkata')
